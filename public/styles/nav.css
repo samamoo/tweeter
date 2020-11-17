@@ -1,0 +1,37 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', sans-serif;
+  color: #FFFFFF;
+  background-color: #4056A1;
+  /* text-shadow: 0 3px 0px rgba(0,0,0,0.25); */
+  padding: 1.5em;
+  padding-top: 2.5em;
+  height: 120px;
+}
+
+.right-banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.write-tweet {
+  font-size: 18px;
+  font-kerning: normal;
+  display: flex;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  justify-content: flex-end
+}
+
+#write {
+  font-weight: bold;
+  padding-right: 5px;
+}
