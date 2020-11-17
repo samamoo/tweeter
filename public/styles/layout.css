@@ -46,3 +46,8 @@ body {
   outline: none;
   resize: none;
  }
+
+ .below-text-area {
+  display: flex;
+  justify-content: space-between;
+ }
