@@ -27,11 +27,22 @@ body {
  */
 
  .container {
-   display: flex;
    background-color: #f4f1ec;
-   justify-content: center;
+  }
+  
+  main {
+    display: flex;
+    width: 90%;
+    justify-content: center;
  }
 
- main {
-   width: 90%;
+ #tweet-text {
+  background-color: #f4f1ec;
+  border-bottom-width: thick;
+  width: 600px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  outline: none;
+  resize: none;
  }
