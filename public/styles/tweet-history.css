@@ -1,0 +1,40 @@
+article.tweet {
+  border-style: solid;
+  transition: box-shadow .3s;
+ }
+
+article.tweet:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+article.tweet header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.user {
+  color: lightsteelblue;
+}
+
+article.tweet img {
+    padding-top: 20px;
+}
+
+article.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: small;
+}
+
+section.past-posts p {
+   padding-left: 20px;
+}
+
+hr {
+   border-top: 3px solid;
+   width: 95%;
+}
