@@ -26,7 +26,12 @@
   margin-top: 5px;
   font-family: 'Bungee', sans-serif;
  }
+ .counter-red {
+   color: red;
+ }
 
  .new-tweet {
    padding: 20px;
+   padding-top: 30px;
+   padding-bottom: 30px;
  }
