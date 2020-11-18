@@ -1,26 +1,39 @@
 article.tweet {
   border-style: solid;
-  transition: box-shadow .3s;
- }
+}
 
 article.tweet:hover {
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  box-shadow: 5px 5px 3px 11px rgba(33,33,33,.2); 
+  transition: box-shadow .1s;
+}
+article.tweet:hover header .user {
+  display: block;
 }
 
 article.tweet header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+article.tweet div {
+  display:flex;
+  align-content: center;
+  place-items: flex-end;
+}
+
 .user {
+  display: none;
   color: lightsteelblue;
 }
 
 article.tweet img {
     padding-top: 20px;
+    padding-right: 20px;
 }
+
 
 article.tweet footer {
   display: flex;
@@ -32,6 +45,7 @@ article.tweet footer {
 
 section.past-posts p {
    padding-left: 20px;
+   padding-top: 15px;
 }
 
 hr {
