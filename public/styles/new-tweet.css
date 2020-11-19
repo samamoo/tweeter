@@ -1,4 +1,17 @@
-#tweet-text {
+.new-tweet {
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.new-tweet label {
+  display: flex;
+  font-weight: bold;
+  justify-content: flex-start;
+  width: 600px;
+}
+
+textarea#tweet-text {
   background-color: #f4f1ec;
   border-bottom-width: thick;
   width: 600px;
@@ -30,8 +43,8 @@
    color: red;
  }
 
- .new-tweet {
+ /* .new-tweet {
    padding: 20px;
    padding-top: 30px;
    padding-bottom: 30px;
- }
+ } */
