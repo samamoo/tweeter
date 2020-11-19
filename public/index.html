@@ -51,9 +51,10 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container" id="container">
-      <section class="new-tweet">
+      <section class="new-tweet" id="new-tweet">
         <!-- <h2>Compose Tweet</h2> -->
-        <p id="error">Error message here</p>
+        <p id="error" class="error">Your post exceeds the character limit!</p>
+        <p id="error-empty" class="error-empty">Your post is empty!</p>
         <form action="/tweets" method="POST">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text" placeholder="Write here..."></textarea>
