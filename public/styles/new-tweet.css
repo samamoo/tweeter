@@ -42,9 +42,30 @@ textarea#tweet-text {
  .counter-red {
    color: red;
  }
+ .error-empty {
+  display: none;
+  border: 2px solid;
+  margin: 10px auto;
+  margin-bottom: 25px;
+  padding: 10px 10px 15px 50px;
+  color: #D8000C;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  max-width: 460px;
+  background-color: #FFBABA;
+  background-image: url(https://i.imgur.com/GnyDvKN.png);
+ }
 
- /* .new-tweet {
-   padding: 20px;
-   padding-top: 30px;
-   padding-bottom: 30px;
- } */
+ .error {
+  display: none;
+  border: 2px solid;
+  margin: 10px auto;
+  margin-bottom: 25px;
+  padding: 10px 10px 15px 50px;
+  color: #D8000C;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  max-width: 460px;
+  background-color: #FFBABA;
+  background-image: url(https://i.imgur.com/GnyDvKN.png);
+ }
