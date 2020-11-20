@@ -3,7 +3,7 @@
   display: flex;
   background-color: lightsteelblue;
   background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
-  height: 400px;
+  max-height: 400px;
   width: 100%;
   justify-content: center;
   align-items: center;
