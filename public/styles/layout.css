@@ -30,19 +30,9 @@ body {
  .container {
    background-color: #f4f1ec;
    display: flex;
-   /* width: 90%; */
-   /* justify-content: center; */
    align-content: center;
    flex-flow: wrap;
    flex-direction: column;
   }
-  
-   /* main {
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    flex-direction: column;
- } */
-
 
  
