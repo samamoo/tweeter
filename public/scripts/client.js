@@ -7,6 +7,9 @@
 $(document).ready(function () {
   $("#button").on("click", handleClick);
   loadTweets();
+  $("#compose").on("click", function() {
+    $("#new-tweet").toggle("slow")
+  });
 });
 
 const loadTweets = function () {
