@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
-  // console.log(chars)
-  
-  $("textarea").on("input", function(event) { //keypress or input
+  $("textarea").on("input", function(event) {
     const chars = $(this).val();
     const counter = $(this).parent().find("#counter");
     let remaining = 140 - chars.length;
