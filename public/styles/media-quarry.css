@@ -1,0 +1,32 @@
+/* nav bar stays fixed: set max width */
+
+/* header : width should be about 40% and main is 60% */
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 15%
+  }
+
+  header {
+    max-width: 37%;
+    float: left;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  main {
+    width: 60%;
+    float: right;
+  }
+  article.tweet {
+    width: 50vw;
+  }
+  section.new-tweet {
+    width: 50vw;
+  }
+  section.past-posts{
+    width: 50vw;
+  }
+}
