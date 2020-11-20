@@ -13,7 +13,7 @@ $(document).ready(function () {
 });
 
 const loadTweets = function () {
-  $.get("/tweets") //array of json tweets
+  $.get("/tweets")
     .then(function (data) {
       return renderTweet(data);
     });
@@ -43,10 +43,13 @@ const createTweetElement = function (data) {
   <hr/>
   <footer class="tweet">
     <p class="data-stamp">${date}</p>
-    <p class="share-links">share links</p>
+    <p class="share-links">
+    <span>&#9873;</span>
+    <span>&#9850;</span>
+    <span>&#10084;</span>
+    </p>
   </footer>
   </article>`);
-  // $("<section>").text(data["content"]["text"]);
   return $tweet;
 };
 
@@ -55,7 +58,6 @@ const renderTweet = function (data) {
   //$(".tweet-container").empty();
   for (const tweet of data) {
     $userTweet = createTweetElement(tweet);
-    // $(".tweet-container").text($userTweet)
     $(".tweet-container").prepend($userTweet);
   }
 };
