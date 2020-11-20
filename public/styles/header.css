@@ -13,4 +13,9 @@
 
 h2 {
   margin-top: 5px;
+  color: #545149;
+}
+
+h2 span {
+  font-weight: 300;
 }
