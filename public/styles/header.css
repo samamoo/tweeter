@@ -1,7 +1,7 @@
 
 .header {
   display: flex;
-  background-color: lightsteelblue;
+  background-color: salmon;
   background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
   max-height: 400px;
   width: 100%;
@@ -13,7 +13,7 @@
 
 h2 {
   margin-top: 5px;
-  color: #545149;
+  color: white;
 }
 
 h2 span {
