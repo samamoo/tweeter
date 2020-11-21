@@ -3,26 +3,41 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-//<script>alert("Hey")</script>
+
 $(document).ready(function () {
+
   $("#button").on("click", handleClick);
   loadTweets();
-  $("#compose").on("click", function() {
-    $("#new-tweet").toggle("slow")
+
+  $("#compose").on("click", function () {
+    $("#new-tweet").toggle("slow");
   });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop()) {
+      $("#to-top:hidden").stop(true, true).fadeIn();
+    } else {
+      $("#to-top").stop(true, true).fadeOut();
+    }
+  });
+  $("label").html(newQuote());
+  newQuote();
 });
 
+//~~~ FUNCTIONS ~~~~//
+
+//Loads the newly created tweet
 const loadTweets = function () {
-  $.get("/tweets")
-    .then(function (data) {
-      return renderTweet(data);
-    });
+  $.get("/tweets").then(function (data) {
+    return renderTweet(data);
+  });
 };
 
+//Creates a new tweet
 const createTweetElement = function (data) {
   let date = new Date(data["created_at"]);
   date = date.toDateString();
-
+  //Escape user's input to avoid Cross-Site Scripting
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -53,15 +68,16 @@ const createTweetElement = function (data) {
   return $tweet;
 };
 
+//Adds new tweet to existing tweets
 const renderTweet = function (data) {
   let $userTweet = "";
-  //$(".tweet-container").empty();
   for (const tweet of data) {
     $userTweet = createTweetElement(tweet);
     $(".tweet-container").prepend($userTweet);
   }
 };
 
+//Creates a tweet if input field is neither empty or over max character count
 const handleClick = function (event) {
   event.preventDefault();
   let newtweets = $("#tweet-text").serialize();
@@ -79,4 +95,21 @@ const handleClick = function (event) {
     $("form").trigger("reset");
     loadTweets(data);
   });
+};
+
+//Picks a new prompt for user text field
+const newQuote = function () {
+  const quotes = [
+    "What are you raven about today?",
+    "What's ruffling your feathers, today?",
+    "Share something fowl...",
+    "What are you cock-a-doodle-doing?",
+    "What you are cuckoo about today?",
+    "Speak your beak...",
+    "What are you chirping about?",
+    "What are you humming about?",
+    " *Cheep! * Cheep! * ...translates to..."
+  ];
+  let pick = Math.floor(Math.random() * quotes.length);
+  return quotes[pick];
 };
