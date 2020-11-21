@@ -8,7 +8,10 @@ article.tweet:hover {
   box-shadow: 15px 14px 3px 0px rgba(33,33,33,.2); 
   transition: box-shadow .1s;
 }
-article.tweet:hover header .user {
+article.tweet:hover .user {
+  display: block;
+}
+article.tweet:hover .share-links {
   display: block;
 }
 
@@ -30,6 +33,9 @@ article.tweet div {
 .user {
   display: none;
   color: lightsteelblue;
+}
+.share-links{
+  display: none;
 }
 
 article.tweet img {
