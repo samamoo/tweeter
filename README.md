@@ -25,8 +25,3 @@ Users can write and submit posts and have it displayed before them without refre
 - Chance
 - Body-parser
 - MD5
-
-## Getting Started
-
-- Install all dependencies (using the `npm install` command).
-- Run the development web server using the `node express_server.js` command.
