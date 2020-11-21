@@ -29,9 +29,10 @@
   </head>
 
   <body>
+    <a href="#top" id="to-top">&#8679;</a>
+    <a id="top"></a>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <!-- <a id="arrow-link"></a> -->
       <span>tweeter</span>
       <div class="right-banner">
         <span class="write-tweet"><span id="write">Write </span> a new tweet</span>
@@ -41,7 +42,6 @@
     </nav>
 
     <header class="header">
-      <!-- <a id="arrow-link"></a> -->
       <div>
           <img src="/images/profile-hex.png" alt="Profile picture"> 
       </div>
@@ -58,8 +58,8 @@
         <p id="error" class="error">Your post exceeds the character limit!</p>
         <p id="error-empty" class="error-empty">Your post is empty!</p>
         <form action="/tweets" method="POST">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text" placeholder="Write here..."></textarea>
+          <label for="tweet-text">What are you raven about, today?</label>
+          <textarea name="text" id="tweet-text" placeholder="Squak here..."></textarea>
           <div class="below-text-area">
             <button id="button" type="submit">Tweet</button></form>
             <output name="counter" id="counter" class="counter" for="tweet-text">140</output>
@@ -84,7 +84,8 @@
             <p class="share-links">
               <span>&#9873;</span>
               <span>&#9850;</span>
-              <span>&#10084;</span></p>
+              <span>&#10084;</span>
+            </p>
           </footer>
         </article> -->
         
