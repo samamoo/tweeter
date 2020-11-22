@@ -7,6 +7,8 @@ Users can write and submit posts and have it displayed before them without refre
 
 ## Final Product
 
+!["Animated features"](https://github.com/samamoo/tweeter/blob/master/docs/Tweeter-desktop-view.gif?raw=true)
+!["Animated features 2"](https://github.com/samamoo/tweeter/blob/master/docs/Tweeter-mobile-view.gif?raw=true)
 !["The product in width of 1024px"](https://github.com/samamoo/tweeter/blob/master/docs/tweeter-min-browser.png?raw=true)
 
 !["The product in width greater than 1024px"](https://github.com/samamoo/tweeter/blob/master/docs/tweeter-desktop.png?raw=true)
