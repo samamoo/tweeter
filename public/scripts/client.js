@@ -22,6 +22,11 @@ $(document).ready(function () {
   });
   $("label").html(newQuote());
   newQuote();
+  
+  const header = document.querySelector(".header");
+  const profile = document.querySelector("#profile-pic");
+  tl.fromTo(header, 1.2, {y: "-110%"}, {y: "0%", ease: Power2.easeInOut})
+  tl.fromTo(profile, 0.7, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut});
 });
 
 //~~~ FUNCTIONS ~~~~//
@@ -113,3 +118,5 @@ const newQuote = function () {
   let pick = Math.floor(Math.random() * quotes.length);
   return quotes[pick];
 };
+
+const tl = new TimelineMax();
