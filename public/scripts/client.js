@@ -12,7 +12,7 @@ $(document).ready(function () {
   $("#compose").on("click", function () {
     $("#new-tweet").toggle("slow");
   });
-
+  $("#to-top").hide();
   $(window).scroll(function () {
     if ($(this).scrollTop()) {
       $("#to-top:hidden").stop(true, true).fadeIn();
@@ -25,8 +25,11 @@ $(document).ready(function () {
   
   const header = document.querySelector(".header");
   const profile = document.querySelector("#profile-pic");
+  const container = document.querySelector(".container")
   tl.fromTo(header, 1.2, {y: "-110%"}, {y: "0%", ease: Power2.easeInOut})
-  tl.fromTo(profile, 0.7, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut});
+  .fromTo(profile, 0.7, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+  .fromTo(container, 0.7, {opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+  // .fromTo(container, 1.2, {x: "100%"}, {x: "0%", ease: Power2.easeInOut})
 });
 
 //~~~ FUNCTIONS ~~~~//
