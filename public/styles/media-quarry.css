@@ -1,4 +1,26 @@
 
+@media only screen and (max-width: 786px){
+  body {
+    max-width: 100%;
+  }
+  .header {
+    max-width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  section.new-tweet {
+    width: 80vw;
+  }
+  section.past-posts{
+    width: 80vw;
+    font-size: 18px;
+  }
+  textarea#tweet-text {
+    width: 75vw;
+  }
+}
+
 @media only screen and (max-width: 1023px){
   nav {
     background-color: salmon;
