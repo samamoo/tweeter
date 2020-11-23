@@ -10,7 +10,7 @@ $(document).ready(function () {
   loadTweets();
 
   $("#compose").on("click", function () {
-    $("#new-tweet").toggle("slow");
+    $("#new-tweet").toggle("medium");
   });
   $("#to-top").hide();
   $(window).scroll(function () {
